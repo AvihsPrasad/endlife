@@ -8,7 +8,7 @@ let registerschema = new Schema({
     email: {type: String, unique: true},
     password: { type: String },
     phone: {type: Number, unique: true, maxlength: 10},
-    aadhar_no: { type: Number, unique: true, maxlength: 16, minlength: 16 },
+    aadhar_no: { type: Number, unique: true, maxlength: 16, minlength: 16 }
 });
 
 module.exports = mongoose.model('Register', registerschema);
